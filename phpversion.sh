@@ -3,7 +3,7 @@
 ### wanna basically run this remotely, add an argument and check to see if there isn't an argument
 ### check whilst I'm at it I can have each case modify the .htaccess for me
 
-url="env.scooterx3.net/php/"
+url="https://phpver.googlecode.com/git/"
 ini52="php.ini_52"
 ini52fcgi="php.ini_52fcgi"
 ini53="php.ini_53"
@@ -122,8 +122,11 @@ Valid arguments:
 
 
 example: 
-. <(curl -Ss env.scooterx3.net/php/phpversion.sh) 54
-^^ changes the current directory to php 5.4
+. <(curl -Ss https://phpver.googlecode.com/git/phpversion.sh) 
+^^ injects the 'phpver' command into the shell
+
+phpver 4
+^^ changes the current directory and down to use php5.4
 
 "
 ;;
